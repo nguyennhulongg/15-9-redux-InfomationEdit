@@ -1,0 +1,50 @@
+header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px 6px rgb(25, 115, 233);
+}
+.info-edit{
+    cursor: pointer;
+    align-self: flex-end;
+    border:2px solid white;
+    margin: 1rem 1.15rem 0 0;
+    padding: 0.45rem;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 2rem;
+  color: white;
+}
+
+.infomation {
+  display: flex;
+}
+
+.info-username {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgb(1, 79, 247);
+}
+.info-age, .info-about {
+  font-size:0.85rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px black;
+}
+
+.info-ava {
+  width: 85px;
+  height: 130px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px black;
+}
