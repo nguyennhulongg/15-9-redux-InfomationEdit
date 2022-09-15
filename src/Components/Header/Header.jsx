@@ -11,18 +11,30 @@ const Header = (props) => {
 
   return ( 
     <>
-      <header 
-        style={{
-          backgroundColor: "#33a8ff", 
-        }}
-      >
-        <div className="info-container">
-          <div className="info-edit" onClick={handleEdit}>Edit</div>
+      <header>
+        <div 
+          className="info-container" 
+          style={{
+            color: `${user.themeColor}`, 
+          }}>
+          <div className='title'>
+            <h1>Profile</h1>
+          </div>
+          <div 
+            className="info-edit" 
+            onClick={handleEdit}
+            style={{
+              backgroundColor: `${user.themeColor}`, 
+            }}>Edit</div>
           <div className="infomation">
-            <div className="info-pic">
-            <img className="info-ava"
-              src= {user.avaUrl}
-              alt="" />
+            <div 
+              className="info-pic" 
+              style={{
+              border: `2px solid ${user.themeColor}`, 
+            }}>
+              <img className="info-ava"
+                src= {user.avaUrl}
+                alt="" />
             </div>
             <div className="info-content">
               <div className="info-username">{`Name: ${user.name}`}</div>

@@ -8,7 +8,7 @@ const EditPage = (props) => {
   const { setEdit } = props
 
   const avaUrl = [
-    'https://scontent.xx.fbcdn.net/v/t1.15752-9/306107701_1527887981006421_3339410091522686551_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=bF8DojhEXUIAX9FuS0e&_nc_ht=scontent.xx&oh=03_AVJySaFNQkWJn43tW6nnk-I5lj3vn90GPuuJmNDwij_t4A&oe=6349A7F9',
+    'https://scontent.xx.fbcdn.net/v/t1.15752-9/299727057_1119327355335747_3665978820805724920_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=oA8DQktaj3MAX_Jw0hG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKRWXHY8hwr8W--RWb0AtZfto1NGc6LBd7pgGtMc3CVCg&oe=6348F8A3',
     'https://scontent.xx.fbcdn.net/v/t1.15752-9/306900578_1829675500758029_86490750446535439_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=d5tv0UzVQpcAX8qiPAN&_nc_ht=scontent.xx&oh=03_AVLVXn2dXoVlk0KKcddHdEi9TikX7w3DYLPvKFLN1dww4w&oe=6348D8FB',
     'https://scontent.xx.fbcdn.net/v/t1.15752-9/306305421_452468173510786_151111810451314024_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=-qyusa_EglwAX_ru0Vt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLeepzbN3qUNvc1VslFSEuEh0OdOA6iXhl3oX8DbFgm_Q&oe=6346A8C2',
     'https://scontent.xx.fbcdn.net/v/t1.15752-9/306003822_2882182195422556_1565175137220076824_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=1YN0z0L5b7AAX9JF-yy&_nc_ht=scontent.xx&oh=03_AVIYsUubdbM2b-vE3pN-j7n0r6u8NZhLbrRV0_C32LnhJA&oe=6348B356',
@@ -35,13 +35,14 @@ const EditPage = (props) => {
       age: age,
       about: about,
       avaUrl: url,
+      themeColor: theme,
     };
     dispatch(update(updateUser));
   }
     
   return ( 
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <div className="edit-container">
             <button className="close">SAVE</button>
           <div className="edit-profile">Edit Profile</div>
