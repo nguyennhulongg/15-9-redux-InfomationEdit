@@ -5,7 +5,8 @@
   padding: 0;
   margin: 0;
 }
-.App{
+
+.App {
   display: flex;
   flex-direction: column;
 }
@@ -20,10 +21,12 @@ body, .App {
   font-size: 1.15rem;
   font-family: "Noto Sans", sans-serif;
 }
-.loading{
+
+.loading {
   color:white;
   text-align: center;
 }
+
 .error {
   color:rgb(255, 56, 56);
   text-align: center;
